@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>不趕快去讀書是在看三小</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&display=swap">
   <style>
     /* 背景改成空 */
     body {
@@ -142,7 +142,6 @@
       flex-shrink: 0;
     }
 
-    
     /* 調整上排六個按鈕 a 樣式 */
     .top-nav > .nav-item a {
       background-color: transparent !important;
@@ -278,18 +277,18 @@
     }
     
     .sidebar {
-    width: 190px;
-    height: 100vh;
-    background-color: #faf3e0;
-    padding: 50px 10px 10px 10px; /* 上50px，左右10px */
-    overflow-y: auto;
-    position: fixed;   /* 保持固定定位 */
-    top: 0;
-    left: -300px;      /* 初始隱藏在畫面左邊 */
-    transition: left 0.3s ease;
-    border-radius: 20px;
-    z-index: 9999;
-}
+      width: 190px;
+      height: 100vh;
+      background-color: #faf3e0;
+      padding: 50px 10px 10px 10px; /* 上50px，左右10px */
+      overflow-y: auto;
+      position: fixed;   /* 保持固定定位 */
+      top: 0;
+      left: -300px;      /* 初始隱藏在畫面左邊 */
+      transition: left 0.3s ease;
+      border-radius: 20px;
+      z-index: 9999;
+    }
     .sidebar.active {
       left: 0;
     }
@@ -355,8 +354,8 @@
     }
     
     #authButtons a {
-  text-decoration: none; /* 去除 a 預設底線 */
-}
+      text-decoration: none; /* 去除 a 預設底線 */
+    }
     #authButtons button {
       display: flex;               /* 使用 flex 排列 */
       justify-content: center;     /* 文字水平置中 */
@@ -421,64 +420,64 @@
       width: auto;
     }
     #accountManagement {
-  display: none;
-  color: white;
-  background: #222;
-  padding: 10px;
-  border-radius: 8px;
-  position: absolute;
-  top: 100%;     /* 調整讓區塊跑到使用者名稱下方 */
-  left: 0;
-  z-index: 1001; /* 確保層級比使用者名稱高 */
-  white-space: nowrap; /* 如果內容不要換行 */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5); /* 可加陰影提升視覺分離 */
-}
+      display: none;
+      color: white;
+      background: #222;
+      padding: 10px;
+      border-radius: 8px;
+      position: absolute;
+      top: 100%;     /* 調整讓區塊跑到使用者名稱下方 */
+      left: 0;
+      z-index: 1001; /* 確保層級比使用者名稱高 */
+      white-space: nowrap; /* 如果內容不要換行 */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5); /* 可加陰影提升視覺分離 */
+    }
     #userNameDisplay {
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-    z-index: 1000;
-}
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      z-index: 1000;
+    }
    
-.dropdown {
-    position: relative;    /* 參考父元素定位 */
-}
-.dropbtn {
-    display: block;
-    padding: 8px;
-    border-radius: 12px;
-    text-decoration: none;
-    color: #000;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;      /* 相對父元素定位 */
-    top: 100%;               /* 緊貼父按鈕下方 */
-    left: 0;                 /* 與父按鈕左對齊 */
-    min-width: 200px;
-    background-color: #fff;
-    border-radius: 12px 12px 12px 12px; /* 下方圓角 */
-    box-shadow:none;
-    z-index: 1000;
-    flex-direction: column;
-    overflow: hidden;
-    padding: 5px 0;
-}
-.dropdown-content a {
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: #000;
-}
-.dropdown-content a:hover {
-    background-color: #555;  /* 深灰底 */
-    color: #000;             /* 黑字 */
-}
-/* 懸停顯示 */
-.dropdown:hover .dropdown-content,
-.dropdown-content:hover {
-    display: flex;
-}
+    .dropdown {
+      position: relative;    /* 參考父元素定位 */
+    }
+    .dropbtn {
+      display: block;
+      padding: 8px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #000;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;      /* 相對父元素定位 */
+      top: 100%;               /* 緊貼父按鈕下方 */
+      left: 0;                 /* 與父按鈕左對齊 */
+      min-width: 200px;
+      background-color: #fff;
+      border-radius: 12px 12px 12px 12px; /* 下方圓角 */
+      box-shadow:none;
+      z-index: 1000;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 5px 0;
+    }
+    .dropdown-content a {
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #000;
+    }
+    .dropdown-content a:hover {
+      background-color: #555;  /* 深灰底 */
+      color: #000;             /* 黑字 */
+    }
+    /* 懸停顯示 */
+    .dropdown:hover .dropdown-content,
+    .dropdown-content:hover {
+      display: flex;
+    }
   </style>
 </head>
 <body>
@@ -493,9 +492,9 @@
   </video>
 
   <script>
-    // 點擊影片跳轉
+    // 點擊影片跳轉，大後端網址
     document.getElementById('bgVideo').addEventListener('click', function() {
-      window.location.href = '/t_course';
+      window.location.href = 'https://my-backend1-t0gu.onrender.com/t_course';
     });
   </script>
 
@@ -503,16 +502,16 @@
   <div class="menu-icon" id="menuIcon"><span></span></div>
   <div class="top-nav">
     <div class="page-banner"><a href="https://aud-slp.mmc.edu.tw/">
-    <img src="/static/image/logo.png" alt="馬偕聽語系橫幅圖" />
-  </a></div>
+      <img src="/static/image/logo.png" alt="馬偕聽語系橫幅圖" />
+    </a></div>
 
-    <div class="nav-item"><a href="/general_knowledge" id="generalKnowledgeBtn">通識</a></div>
-    <div class="nav-item"><a href="#" onclick="location.href='/admin/comments'">問題回覆區</a></div>
-    <div class="nav-item"><a href="/grade_calculator">成績計算機</a></div>
-    <div class="nav-item"><a href="/teach">網站使用說明</a></div>
+    <div class="nav-item"><a href="https://my-backend1-t0gu.onrender.com/general_knowledge" id="generalKnowledgeBtn">通識</a></div>
+    <div class="nav-item"><a href="#" onclick="location.href='https://my-backend1-t0gu.onrender.com/admin/comments'">問題回覆區</a></div>
+    <div class="nav-item"><a href="https://my-backend1-t0gu.onrender.com/grade_calculator">成績計算機</a></div>
+    <div class="nav-item"><a href="https://my-backend1-t0gu.onrender.com/teach">網站使用說明</a></div>
     <div class="logo-search">
       
-      <form action="/search" method="get" id="searchForm">
+      <form action="https://my-backend1-t0gu.onrender.com/search" method="get" id="searchForm">
         <input 
           type="text" 
           name="q" 
@@ -536,10 +535,8 @@
     <div id="accountManagement" style="display:none; color: white; background: #222; padding: 10px; border-radius: 8px; position: absolute;">
       <p>帳號管理頁面</p>
       <a href="{{ url_for('logout') }}" id="logoutLink" style="display: block; width: 100px; margin: 0 auto; text-align: center; text-decoration: none; color:white; ">
-    登出
-</a>
-
-
+        登出
+      </a>
     </div>
    </span>
   {% else %}
@@ -569,32 +566,29 @@
   <div id="sidebar" class="sidebar">
     
     <a href="{{ url_for('static', filename='calendar.pdf') }}" target="_blank">校園行事曆</a>
-    <a href="/appointment">預約系統</a>
-    <a href="/speech_translate">英文即時字幕</a>
+    <a href="https://my-backend1-t0gu.onrender.com/appointment">預約系統</a>
+    <a href="https://my-backend1-t0gu.onrender.com/speech_translate">英文即時字幕</a>
    
     <!-- 新增純音聽力檢查模擬器按鈕 -->
-    <a href="check">純音聽力檢查模擬器</a>
-    
-    <!-- 新增跳轉到 ear.html 按鈕 -->
-    
+    <a href="https://my-backend1-t0gu.onrender.com/check">純音聽力檢查模擬器</a>
     
     <!-- 新增基礎聽力科學按鈕 -->
     <div class="dropdown">
         <a href="#" class="dropbtn">基礎聽力科學圖形工具</a>
         <div class="dropdown-content">
-            <a href="/wave">波型繪製</a>
-            <a href="/wave4">拍音與振幅調變</a>
-            <a href="/wave2">聲強與聲壓衰減</a>
-            <a href="/wave3">耳蝸電位</a>
-            <a href="/two_tone">雙音抑制(同向抑制)&對向抑制</a>
-            <a href="/cochlear">rate-level function</a>
+            <a href="https://my-backend1-t0gu.onrender.com/wave">波型繪製</a>
+            <a href="https://my-backend1-t0gu.onrender.com/wave4">拍音與振幅調變</a>
+            <a href="https://my-backend1-t0gu.onrender.com/wave2">聲強與聲壓衰減</a>
+            <a href="https://my-backend1-t0gu.onrender.com/wave3">耳蝸電位</a>
+            <a href="https://my-backend1-t0gu.onrender.com/two_tone">雙音抑制(同向抑制)&對向抑制</a>
+            <a href="https://my-backend1-t0gu.onrender.com/cochlear">rate-level function</a>
         </div>
     </div>
     <!-- 言語科學 -->
   <div class="dropdown">
     <a href="#" class="dropbtn">言語科學圖形工具</a>
     <div class="dropdown-content">
-      <a href="/vowels">母音特性</a>
+      <a href="https://my-backend1-t0gu.onrender.com/vowels">母音特性</a>
     </div>
   </div>
   </div>
@@ -711,8 +705,8 @@
         if (subject) {
           // 使用 encodeURIComponent 進行 URL 編碼防止錯誤
           const encodedSubject = encodeURIComponent(subject);
-          // 導向 /course/<course_name> 路由
-          window.location.href = `/course/${encodedSubject}`;
+          // 導向 /course/<course_name> 路由，改為 render 網址
+          window.location.href = `https://my-backend1-t0gu.onrender.com/course/${encodedSubject}`;
         }
       });
       const sidebarNotesBtn = document.getElementById("sidebarNotesBtn");
@@ -802,7 +796,7 @@
       const waveBtn = document.getElementById('waveBtn');
       if (waveBtn) {
         waveBtn.addEventListener('click', () => {
-          window.location.href = '/wave';  // 路由名稱對應 flask 路由
+          window.location.href = 'https://my-backend1-t0gu.onrender.com/wave';  // 路由名稱對應 flask 路由
         });
       }
       // 登入與註冊按鈕及表單邏輯
@@ -873,96 +867,97 @@
         // 將登入及註冊按鈕改為用戶名稱顯示
         authButtonsDiv.innerHTML = `<span style="color: gray; font-weight: bold; cursor: default;">${users[username].name}</span>`;
         // 還原操作
-  const actions = users[username].actions || [];
-  restoreUserActions(actions);
-};
-  // 監聽操作、記錄並存在 localStorage
-  function recordUserAction(username, action) {
-    let users = JSON.parse(localStorage.getItem('users') || '{}');
-    if (!users[username]) users[username] = {name: username, password: '', actions: []};
-    users[username].actions = users[username].actions || [];
-    users[username].actions.push(action);
-    localStorage.setItem('users', JSON.stringify(users));
-  }
-  // 還原操作的示範函式
-  function restoreUserActions(actions) {
-    actions.forEach(action => {
-      if (action.type === 'selectChange') {
-        const element = document.getElementById(action.elementId);
-        if (element) {
-          element.value = action.value;
-          // 可觸發 change 事件，使介面同步更新
-          element.dispatchEvent(new Event('change'));
-        }
+        const actions = users[username].actions || [];
+        restoreUserActions(actions);
+      };
+      // 監聽操作、記錄並存在 localStorage
+      function recordUserAction(username, action) {
+        let users = JSON.parse(localStorage.getItem('users') || '{}');
+        if (!users[username]) users[username] = {name: username, password: '', actions: []};
+        users[username].actions = users[username].actions || [];
+        users[username].actions.push(action);
+        localStorage.setItem('users', JSON.stringify(users));
       }
-      // 其他操作類型依需求增加
-    });
-  }
-  // 監聽年級/學期/科目選擇改變，並紀錄
-  window.addEventListener('load', () => {
-    const username = document.getElementById('login-username')?.value.trim() || '';
-    ['gradeSelect', 'semesterSelect', 'subjectSelect', 'gradeSelectBottom', 'semesterSelectBottom', 'subjectSelectBottom'].forEach(selectId => {
-      const selectElem = document.getElementById(selectId);
-      if (selectElem) {
-        selectElem.addEventListener('change', (e) => {
-          if(username){
-            recordUserAction(username, {
-              type: 'selectChange',
-              elementId: selectId,
-              value: e.target.value,
-              timestamp: new Date().toISOString(),
+      // 還原操作的示範函式
+      function restoreUserActions(actions) {
+        actions.forEach(action => {
+          if (action.type === 'selectChange') {
+            const element = document.getElementById(action.elementId);
+            if (element) {
+              element.value = action.value;
+              // 可觸發 change 事件，使介面同步更新
+              element.dispatchEvent(new Event('change'));
+            }
+          }
+          // 其他操作類型依需求增加
+        });
+      }
+      // 監聽年級/學期/科目選擇改變，並紀錄
+      window.addEventListener('load', () => {
+        const username = document.getElementById('login-username')?.value.trim() || '';
+        ['gradeSelect', 'semesterSelect', 'subjectSelect', 'gradeSelectBottom', 'semesterSelectBottom', 'subjectSelectBottom'].forEach(selectId => {
+          const selectElem = document.getElementById(selectId);
+          if (selectElem) {
+            selectElem.addEventListener('change', (e) => {
+              if(username){
+                recordUserAction(username, {
+                  type: 'selectChange',
+                  elementId: selectId,
+                  value: e.target.value,
+                  timestamp: new Date().toISOString(),
+                });
+              }
             });
           }
         });
-      }
+      });
     });
-  });
-</script>
-<script>
-  // 漢堡選單控制
-  const menuIcon = document.getElementById("menuIcon");
-  const sidebar = document.getElementById("sidebar");
-  menuIcon.addEventListener("click", () => {
-    menuIcon.classList.toggle("active");
-    sidebar.classList.toggle("active");
-  });
-  // 帳號名稱控制
-  const userNameDisplay = document.getElementById("userNameDisplay");
-  const accountManagement = document.getElementById("accountManagement");
-  if (userNameDisplay && accountManagement) {
-    userNameDisplay.addEventListener("click", (e) => {
-      e.stopPropagation(); // 避免冒泡
-      accountManagement.style.display =
-        accountManagement.style.display === "block" ? "none" : "block";
+  </script>
+  <script>
+    // 漢堡選單控制
+    const menuIcon = document.getElementById("menuIcon");
+    const sidebar = document.getElementById("sidebar");
+    menuIcon.addEventListener("click", () => {
+      menuIcon.classList.toggle("active");
+      sidebar.classList.toggle("active");
     });
-    // 點擊外部區域關閉
-    document.addEventListener("click", (e) => {
-      if (!userNameDisplay.contains(e.target)) {
-        accountManagement.style.display = "none";
-      }
-    });
-  }
-document.querySelectorAll('.dropdown').forEach(drop => {
-    const btn = drop.querySelector('.dropbtn');
-    const menu = drop.querySelector('.dropdown-content');
-    btn.addEventListener('click', (e) => {
-        e.preventDefault(); // 防止跳頁
-        // 判斷目前是否已經顯示
-        const isVisible = menu.style.display === 'flex';
-        // 收起其他子選單
-        document.querySelectorAll('.dropdown-content').forEach(m => {
-            if (m !== menu) m.style.display = 'none';
-        });
-        // 切換當前子選單顯示/收起
-        menu.style.display = isVisible ? 'none' : 'flex';
-    });
-});
-// 點擊頁面其他地方收起所有子選單
-document.addEventListener('click', (e) => {
-    if (!e.target.closest('.dropdown')) {
-        document.querySelectorAll('.dropdown-content').forEach(m => m.style.display = 'none');
+    // 帳號名稱控制
+    const userNameDisplay = document.getElementById("userNameDisplay");
+    const accountManagement = document.getElementById("accountManagement");
+    if (userNameDisplay && accountManagement) {
+      userNameDisplay.addEventListener("click", (e) => {
+        e.stopPropagation(); // 避免冒泡
+        accountManagement.style.display =
+          accountManagement.style.display === "block" ? "none" : "block";
+      });
+      // 點擊外部區域關閉
+      document.addEventListener("click", (e) => {
+        if (!userNameDisplay.contains(e.target)) {
+          accountManagement.style.display = "none";
+        }
+      });
     }
-});
-</script>
+    document.querySelectorAll('.dropdown').forEach(drop => {
+      const btn = drop.querySelector('.dropbtn');
+      const menu = drop.querySelector('.dropdown-content');
+      btn.addEventListener('click', (e) => {
+          e.preventDefault(); // 防止跳頁
+          // 判斷目前是否已經顯示
+          const isVisible = menu.style.display === 'flex';
+          // 收起其他子選單
+          document.querySelectorAll('.dropdown-content').forEach(m => {
+              if (m !== menu) m.style.display = 'none';
+          });
+          // 切換當前子選單顯示/收起
+          menu.style.display = isVisible ? 'none' : 'flex';
+      });
+    });
+    // 點擊頁面其他地方收起所有子選單
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.dropdown')) {
+          document.querySelectorAll('.dropdown-content').forEach(m => m.style.display = 'none');
+      }
+    });
+  </script>
 </body>
 </html>
