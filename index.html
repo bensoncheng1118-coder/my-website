@@ -485,14 +485,14 @@
 
   <!-- 新增全螢幕影片，點擊跳轉 t_course.html -->
   <video id="bgVideo" autoplay muted loop playsinline>
-    <source src="https://my-backend1-7.onrender.com/static/video/vg1.mp4" type="video/mp4" />
+    <source src="https://bensoncheng1118.onrender.com/static/video/vg1.mp4" type="video/mp4" />
     您的瀏覽器不支援影片播放。
   </video>
 
   <script>
     // 點擊影片跳轉
     document.getElementById('bgVideo').addEventListener('click', function() {
-      window.location.href = 'https://my-backend1-7.onrender.com/t_course';
+      window.location.href = 'https://bensoncheng1118.onrender.com/t_course';
     });
   </script>
 
@@ -500,16 +500,16 @@
   <div class="menu-icon" id="menuIcon"><span></span></div>
   <div class="top-nav">
     <div class="page-banner"><a href="https://aud-slp.mmc.edu.tw/">
-      <img src="https://my-backend1-7.onrender.com/static/image/logo.png" alt="馬偕聽語系橫幅圖" />
+      <img src="https://bensoncheng1118.onrender.com/static/image/logo.png" alt="馬偕聽語系橫幅圖" />
     </a></div>
 
-    <div class="nav-item"><a href="https://my-backend1-7.onrender.com/general_knowledge" id="generalKnowledgeBtn">通識</a></div>
-    <div class="nav-item"><a href="#" onclick="location.href='https://my-backend1-7.onrender.com/admin/comments'">問題回覆區</a></div>
-    <div class="nav-item"><a href="https://my-backend1-7.onrender.com/grade_calculator">成績計算機</a></div>
-    <div class="nav-item"><a href="https://my-backend1-7.onrender.com/teach">網站使用說明</a></div>
+    <div class="nav-item"><a href="https://bensoncheng1118.onrender.com/general_knowledge" id="generalKnowledgeBtn">通識</a></div>
+    <div class="nav-item"><a href="#" onclick="location.href='https://bensoncheng1118.onrender.com/admin/comments'">問題回覆區</a></div>
+    <div class="nav-item"><a href="https://bensoncheng1118.onrender.com/grade_calculator">成績計算機</a></div>
+    <div class="nav-item"><a href="https://bensoncheng1118.onrender.com/teach">網站使用說明</a></div>
     <div class="logo-search">
       
-      <form action="https://my-backend1-7.onrender.com/search" method="get" id="searchForm">
+      <form action="https://bensoncheng1118.onrender.com/search" method="get" id="searchForm">
         <input 
           type="text" 
           name="q" 
@@ -564,29 +564,29 @@
   <div id="sidebar" class="sidebar">
     
     <a href="{{ url_for('static', filename='calendar.pdf') }}" target="_blank">校園行事曆</a>
-    <a href="https://my-backend1-7.onrender.com/appointment">預約系統</a>
-    <a href="https://my-backend1-7.onrender.com/speech_translate">英文即時字幕</a>
+    <a href="https://bensoncheng1118.onrender.com/appointment">預約系統</a>
+    <a href="https://bensoncheng1118.onrender.com/speech_translate">英文即時字幕</a>
    
     <!-- 新增純音聽力檢查模擬器按鈕 -->
-    <a href="https://my-backend1-7.onrender.com/check">純音聽力檢查模擬器</a>
+    <a href="https://bensoncheng1118.onrender.com/check">純音聽力檢查模擬器</a>
     
     <!-- 新增基礎聽力科學按鈕 -->
     <div class="dropdown">
         <a href="#" class="dropbtn">基礎聽力科學圖形工具</a>
         <div class="dropdown-content">
-            <a href="https://my-backend1-7.onrender.com/wave">波型繪製</a>
-            <a href="https://my-backend1-7.onrender.com/wave4">拍音與振幅調變</a>
-            <a href="https://my-backend1-7.onrender.com/wave2">聲強與聲壓衰減</a>
-            <a href="https://my-backend1-7.onrender.com/wave3">耳蝸電位</a>
-            <a href="https://my-backend1-7.onrender.com/two_tone">雙音抑制(同向抑制)&對向抑制</a>
-            <a href="https://my-backend1-7.onrender.com/cochlear">rate-level function</a>
+            <a href="https://bensoncheng1118.onrender.com/wave">波型繪製</a>
+            <a href="https://bensoncheng1118.onrender.com/wave4">拍音與振幅調變</a>
+            <a href="https://bensoncheng1118.onrender.com/wave2">聲強與聲壓衰減</a>
+            <a href="https://bensoncheng1118.onrender.com/wave3">耳蝸電位</a>
+            <a href="https://bensoncheng1118.onrender.com/two_tone">雙音抑制(同向抑制)&對向抑制</a>
+            <a href="https://bensoncheng1118.onrender.com/cochlear">rate-level function</a>
         </div>
     </div>
     <!-- 言語科學 -->
   <div class="dropdown">
     <a href="#" class="dropbtn">言語科學圖形工具</a>
     <div class="dropdown-content">
-      <a href="https://my-backend1-7.onrender.com/vowels">母音特性</a>
+      <a href="https://bensoncheng1118.onrender.com/vowels">母音特性</a>
     </div>
   </div>
   </div>
@@ -704,7 +704,7 @@
           // 使用 encodeURIComponent 進行 URL 編碼防止錯誤
           const encodedSubject = encodeURIComponent(subject);
           // 導向 /course/<course_name> 路由，改為 render 網址
-          window.location.href = `https://my-backend1-7.onrender.com/course/${encodedSubject}`;
+          window.location.href = `https://bensoncheng1118.onrender.com/course/${encodedSubject}`;
         }
       });
       const sidebarNotesBtn = document.getElementById("sidebarNotesBtn");
@@ -794,7 +794,7 @@
       const waveBtn = document.getElementById('waveBtn');
       if (waveBtn) {
         waveBtn.addEventListener('click', () => {
-          window.location.href = 'https://my-backend1-7.onrender.com/wave';  // 路由名稱對應 flask 路由
+          window.location.href = 'https://bensoncheng1118.onrender.com/wave';  // 路由名稱對應 flask 路由
         });
       }
       // 登入與註冊按鈕及表單邏輯
